@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondhand Item Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Secondhand Item Tracker</h1>
+        
+        <div class="form-section">
+            <h2>Register Item</h2>
+            <input type="text" id="itemName" placeholder="Item Name">
+            <input type="text" id="itemDesc" placeholder="Item Description">
+            <button onclick="registerItem()">Register</button>
+        </div>
+        
+        <div class="form-section">
+            <h2>Transfer Ownership</h2>
+            <input type="number" id="itemId" placeholder="Item ID">
+            <input type="text" id="newOwner" placeholder="New Owner Address">
+            <button onclick="transferOwnership()">Transfer</button>
+        </div>
+        
+        <div class="form-section">
+            <h2>Get Item Info</h2>
+            <input type="number" id="searchItemId" placeholder="Item ID">
+            <button onclick="getItemInfo()">Get Info</button>
+            <div id="itemInfo" class="info-box"></div>
+        </div>
+    </div>
+</body>
+</html>
